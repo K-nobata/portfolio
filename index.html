@@ -1,0 +1,58 @@
+# ポートフォリオ：カード一覧（HTML と CSS）
+
+以下は、プロジェクト名とプロジェクトの URL へ飛べるボタンを持つカード一覧ポートフォリオのサンプルコードです。右下のコードブロックをそれぞれ `index.html` と `styles.css` に保存して使ってください。
+
+---
+
+## index.html
+
+```html
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ゼミ用ポートフォリオサイト</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>My Projects</h1>
+      <p class="lead">クリックでプロジェクトページに移動します。</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card-grid" aria-label="Projects">
+
+      <!-- カードを必要なだけ複製して使ってください -->
+      <article class="card">
+        <h3 class="card-title">Project Alpha</h3>
+        <p class="card-desc">短い説明（オプション）。</p>
+        <a class="card-btn" href="https://example.com/project-alpha" target="_blank" rel="noopener">Open Project</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Project Beta</h3>
+        <p class="card-desc">短い説明（オプション）。</p>
+        <a class="card-btn" href="https://example.com/project-beta" target="_blank" rel="noopener">Open Project</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Project Gamma</h3>
+        <p class="card-desc">短い説明（オプション）。</p>
+        <a class="card-btn" href="https://example.com/project-gamma" target="_blank" rel="noopener">Open Project</a>
+      </article>
+
+      <!-- ここにカードを追加 -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© ${new Date().getFullYear()} Your Name</small>
+    </div>
+  </footer>
+</body>
+</html>
